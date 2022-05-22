@@ -14,6 +14,11 @@ SET rama_heroku=heroku
 @REM call npm create vite@latest %repo_name% -- --template react
 @REM /S	Copia directorios y subdirectorios, excepto los vacíos.
 @REM /E	Copia directorios y subdirectorios, incluidos los vacíos.
+git checkout -b %rama_github%
+git checkout dev /dist
+call rd * /s /q
+pause
+
 xcopy www %repo_name% /E
 cd %repo_name%
 
