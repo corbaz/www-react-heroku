@@ -42,9 +42,11 @@ SET rama_heroku=heroku
 git init 
 git add .
 git commit -m "Inicio main"
+git push
+pause push
 
 @REM git checkout -b %rama_dev%
-git checkout %rama_dev%
+call git checkout %rama_dev%
 call rd * /s /q
 pause
 git checkout main www/
