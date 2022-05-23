@@ -43,13 +43,14 @@ git init
 git add .
 git commit -m "Inicio main"
 
-git checkout -b %rama_dev%
+@REM git checkout -b %rama_dev%
 git checkout %rama_dev%
 call rd * /s /q
 pause
 git checkout main /www
 git checkout main /bat
 git branch -v
+pause
 git add .
 git commit -m "Inicio dev"
 git checkout %rama_main%
@@ -57,16 +58,5 @@ pause
 
 
 
-
-
-
-@REM set /p URL=<list.txt
-@REM echo %URL%
-@REM more +1 list.txt | findstr /r /v "^$" > tmp_list.txt
-@REM set /p URL=<tmp_list.txt
-@REM echo %URL%
-
-@REM @REM Open the browser with that URL start "" "%URL%"
-@REM @REM start "" "%URL%"
 
 
