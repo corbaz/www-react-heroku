@@ -47,8 +47,8 @@ git commit -m "Inicio main"
 git checkout %rama_dev%
 call rd * /s /q
 pause
-git checkout main www
-git checkout main bat
+git checkout main www/
+git checkout main bat/
 git branch -v
 pause
 git add .
