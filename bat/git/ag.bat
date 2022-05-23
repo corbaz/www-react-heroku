@@ -19,3 +19,6 @@ echo.
 
 echo Cambiar de rama
 echo git checkout branch-name
+
+echo Borrar una rama
+echo git branch -D branch-name

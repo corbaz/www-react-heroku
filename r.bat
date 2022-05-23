@@ -8,13 +8,14 @@ SET repo_http_heroku=https://git.heroku.com/%repo_name%.git
 SET web_github=https://%user_name%.github.io/%repo_name%/
 SET web_heroku=https://jcc-react.herokuapp.com/
 SET rama_principal=main
+SET rama_dev=dev
 SET rama_github=github
 SET rama_heroku=heroku
 
 @REM call npm create vite@latest %repo_name% -- --template react
 @REM /S	Copia directorios y subdirectorios, excepto los vacíos.
 @REM /E	Copia directorios y subdirectorios, incluidos los vacíos.
-git checkout -b %rama_github%
+git checkout -b %rama_dev%
 git checkout dev /dist
 call rd * /s /q
 pause
