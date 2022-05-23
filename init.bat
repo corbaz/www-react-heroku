@@ -6,11 +6,6 @@ SET proyecto=www-react-heroku
 SET %github%_user=corbaz
 SET %heroku%_user=julio.corbaz@gmail.com
 
-set bat=bat
-set git=git
-set github=github
-set heroku=heroku
-
 set %github%_web=https://github.com/
 set %github%_profile=%github_web%%github_user%/
 set %github%_repo=%github_profile%%proyecto%.git
@@ -19,6 +14,11 @@ set %heroku%_apps=https://dashboard.heroku.com/apps/
 set %heroku%_dashboard=%heroku_apps%%proyecto%
 set %heroku%_web=https://git.heroku.com/
 set %heroku%_repo=%herooku_webe%%proyecto%.git
+
+set bat=bat
+set git=git
+set github=github
+set heroku=heroku
 
 set dir_raiz=%cd%
 set dir_%bat%=%dir_raiz%\%bat%

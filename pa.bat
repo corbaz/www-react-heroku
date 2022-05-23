@@ -1,4 +1,9 @@
 cls
+set bat=bat
+set git=git
+set github=github
+set heroku=heroku
+
 set dir_raiz=%cd%
 set dir_%bat%=%dir_raiz%\%bat%
 set dir_%bat%_%git%=%dir_raiz%\%bat%\%git%
