@@ -44,12 +44,15 @@ git add .
 git commit -m "Inicio main"
 
 git checkout -b %rama_dev%
+git checkout %rama_dev%
 call rd * /s /q
 
 git checkout main /www
 git checkout main /bat
 git branch -v
-
+git add .
+git commit -m "Inicio dev"
+git checkout %rama_main%
 pause
 
 
