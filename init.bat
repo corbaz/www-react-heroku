@@ -50,7 +50,9 @@ call rd * /s /q
 git checkout main /www
 git checkout main /bat
 git branch -v
-
+git add .
+git commit -m "Inicio dev"
+git checkout %rama_main%
 pause
 
 
