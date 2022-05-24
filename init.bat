@@ -55,7 +55,7 @@ git branch -v
 pause
 git add .
 git commit -m "Inicio dev"
-git checkout %rama_main%
+@REM git checkout %rama_main%
 pause
 
 
